@@ -1,0 +1,16 @@
+{
+  "name": "RaiseBright",
+  "short_name": "RaiseBright",
+  "description": "Personalized 30-day growth plans for children ages 3\u201312.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F9F4",
+  "theme_color": "#1A3F3C",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
