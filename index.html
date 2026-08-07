@@ -1075,6 +1075,22 @@
       menuBtn.setAttribute('aria-expanded','false');
       menuBtn.setAttribute('aria-label','Open menu');
     }));
+   document.addEventListener('click',(e)=>{
+  if(!navLinks.contains(e.target) && !menuBtn.contains(e.target)){
+    navLinks.classList.remove('mobile-open');
+    menuBtn.setAttribute('aria-expanded','false');
+    menuBtn.setAttribute('aria-label','Open menu');
+  }
+});
+
+document.addEventListener('keydown',(e)=>{
+  if(e.key==='Escape'){
+    navLinks.classList.remove('mobile-open');
+    menuBtn.setAttribute('aria-expanded','false');
+    menuBtn.setAttribute('aria-label','Open menu');
+    menuBtn.focus();
+  }
+});
   }
 
   // Checkout intent tracking; no questionnaire or child data is sent
