@@ -32,7 +32,7 @@
 <meta property="og:image" content="https://raisebright.org/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="RaiseBright personalized growth plans for children ages 3–12">
+<meta property="og:image:alt" content="RaiseBright personalized 30-day growth plan for children ages 3–12">
 <meta name="twitter:image" content="https://raisebright.org/og-image.png">
   <meta name="twitter:image:alt" content="RaiseBright personalized 30-day growth plan for children ages 3–12">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -180,6 +180,7 @@
   .nav-links a:hover{color:var(--teal);}
   .nav-cta{display:flex; align-items:center; gap:14px;}
   .nav .btn{padding:11px 22px; font-size:14.5px;}
+  .mobile-menu-cta{display:none;}
   .menu-toggle{
     display:none; background:none; border:none; cursor:pointer; padding:6px;
   }
@@ -188,13 +189,16 @@
   @media (max-width:900px){
     .nav-links{display:none;}
     .menu-toggle{display:block;}
+    .nav-cta > .checkout-link{display:none;}
   }
 
 
   @media (max-width:900px){
     .nav{position:relative;}
-    .nav-links.mobile-open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;padding:12px 24px 20px;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:0 16px 28px -24px rgba(30,51,47,.45);}
+    .nav-links.mobile-open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;padding:12px 24px 20px;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:0 16px 28px -24px rgba(30,51,47,.45);max-height:80vh;overflow-y:auto;}
     .nav-links.mobile-open a{display:block;padding:11px 0;}
+    .nav-links.mobile-open .mobile-menu-cta{display:block;margin-top:12px;padding:0;}
+    .nav-links.mobile-open .mobile-menu-cta .btn{width:100%;justify-content:center;text-align:center;}
   }
 
   /* ---------- Hero ---------- */
@@ -256,10 +260,11 @@
   }
   .plan-avatar{
     width:52px;height:52px;border-radius:50%;
-    background:linear-gradient(145deg, var(--coral), var(--gold));
+    background:#1A3F3C;
     display:flex; align-items:center; justify-content:center;
-    color:var(--teal-deep); font-family:'Fraunces',serif; font-size:20px; font-weight:600;
+    color:#F0B15E; font-family:'Fraunces',serif; font-size:20px; font-weight:600;
     flex-shrink:0;
+    border:2px solid #C84E1B;
   }
   .plan-card-head .name{font-family:'Fraunces',serif; font-size:19px; font-weight:600;}
   .plan-card-head .meta{font-size:13.5px; color:var(--ink-soft);}
@@ -421,7 +426,7 @@
     width:40px;height:40px;border-radius:10px; background:var(--teal-tint); color:var(--teal-deep);
     display:flex; align-items:center; justify-content:center; font-weight:800; font-size:13px; flex-shrink:0;
   }
-  .sample-day-card h4{font-family:'Fraunces',serif; font-size:16.5px; font-weight:600; margin:0 0 4px;}
+  .sample-day-card h3{font-family:'Fraunces',serif; font-size:16.5px; font-weight:600; margin:0 0 4px;}
   .sample-day-card p{font-size:13.5px; color:var(--ink-soft); margin:0;}
 
   /* ---------- Special support ---------- */
@@ -838,16 +843,17 @@
       </svg>
       RaiseBright
     </a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="primary-navigation">
       <li><a href="#how-it-works">How It Works</a></li>
       <li><a href="#sample-plan">Sample Plan</a></li>
       <li><a href="#pricing">Pricing</a></li>
       <li><a href="#faq">FAQ</a></li>
+      <li class="mobile-menu-cta"><a href="https://www.paypal.com/ncp/payment/FDGYPNBM72WK2" class="btn btn-primary checkout-link" data-cta="header" target="_blank" rel="noopener noreferrer">Start My Child's Plan</a></li>
     </ul>
     <div class="nav-cta">
      <a href="https://www.paypal.com/ncp/payment/FDGYPNBM72WK2" class="btn btn-primary checkout-link" data-cta="header" target="_blank" rel="noopener noreferrer">Start My Child's Plan</a>
-      <button class="menu-toggle" aria-label="Open menu">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#1E332F" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1E332F" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
       </button>
     </div>
   </nav>
@@ -864,7 +870,7 @@
       <div>
         <div class="hero-eyebrow-wrap"><span class="eyebrow"><span class="dot"></span>Every Child Has Potential.</span></div>
         <h1>A personalized 30-day growth journey designed <span class="accent">just for your child</span></h1>
-        <p class="sub">Receive a professional PDF plan with practical 5–10 minute activities, parent guidance, and age-appropriate ideas shaped around your child’s interests, personality, strengths, and goals.</p>
+        <p class="sub">Receive a professional PDF plan with practical 5–10 minute activities, parent guidance, and age-appropriate ideas shaped around your child's interests, personality, strengths, and goals.</p>
         <div class="hero-btns">
          <a href="https://www.paypal.com/ncp/payment/FDGYPNBM72WK2" class="btn btn-primary checkout-link" data-cta="hero" target="_blank" rel="noopener noreferrer">Start My Child's Plan</a>
           <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
@@ -872,7 +878,7 @@
         <div class="hero-trust">
           <span>✓ Ages 3–12</span>
           <span>✓ Parent-guided</span>
-          <span>✓ Delivered within 24 hours</span>
+          <span>✓ Delivered within 24 hours after questionnaire completion</span>
         </div>
       </div>
 
@@ -921,7 +927,7 @@
       <div class="section-head">
         <span class="eyebrow"><span class="dot"></span>You're not alone in this</span>
         <h2>Does this sound familiar?</h2>
-       <p>Every parent wonders if they're doing enough. You’re not looking for perfection—you just want the right guidance for your child.</p>
+       <p>Every parent wonders if they're doing enough. You're not looking for perfection—you just want the right guidance for your child.</p>
       </div>
       <div class="problem-grid">
         <div class="problem-card"><span class="mark" aria-hidden="true">&ldquo;</span><p>Your child struggles to stay focused, even during activities they love?</p></div>
@@ -936,7 +942,7 @@
   <section id="solution">
     <div class="wrap solution-wrap">
       <div>
-        <svg class="compass-illo" viewBox="0 0 400 400" fill="none">
+        <svg class="compass-illo" viewBox="0 0 400 400" fill="none" aria-hidden="true">
           <circle cx="200" cy="200" r="150" fill="#E4EEEC"/>
           <circle cx="200" cy="200" r="110" fill="#FFFFFF" stroke="#DEE6D9" stroke-width="2"/>
           <path d="M200 110 L226 186 L200 174 L174 186 Z" fill="#FF8C61"/>
@@ -993,8 +999,9 @@
       <div class="growth-path">
         <div class="path-step">
           <div class="path-node">1</div>
+          <h3>Complete the parent questionnaire</h3>
           <p>After checkout, you'll receive an email with a link to complete the parent questionnaire — about 5 minutes.</p>
-          <p>Share your child’s age, interests, personality, strengths, goals, and the time available each day.</p>
+          <p>Share your child's age, interests, personality, strengths, goals, and the time available each day.</p>
         </div>
         <div class="path-step">
           <div class="path-node">2</div>
@@ -1016,7 +1023,7 @@
       <div class="section-head">
         <span class="eyebrow"><span class="dot"></span>See it in action</span>
         <h2>A glimpse of what a personalized journey can look like</h2>
-        <p>Here's a glimpse of what a personalized plan looks like.</p>
+        <p>See how interests, strengths, and goals can shape a child's personalized 30-day plan.</p>
       </div>
       <div class="sample-wrap">
         <div class="sample-profile">
@@ -1062,7 +1069,7 @@
         <p class="support-note">RaiseBright offers educational support activities and is not a form of therapy or a medical or diagnostic service.</p>
       </div>
       <div>
-        <svg viewBox="0 0 400 380" fill="none" style="max-width:420px; margin:0 auto;">
+        <svg viewBox="0 0 400 380" fill="none" style="max-width:420px; margin:0 auto;" aria-hidden="true">
           <path d="M60 320 C60 220 130 150 200 150 C270 150 340 220 340 320" stroke="#DEE6D9" stroke-width="2" fill="#F7F9F4"/>
           <circle cx="130" cy="120" r="34" fill="#FFE9DE"/>
           <circle cx="200" cy="90" r="42" fill="#E4EEEC"/>
@@ -1087,10 +1094,10 @@
           <p>RaiseBright turns parent-provided insights about age, interests, personality, strengths, goals, and daily routine into a structured 30-day activity plan designed around the individual child.</p>
           <p>The result is a structured, practical plan built around your child—not a generic list of internet activities and not a clinical assessment.</p>
           <div class="authority-grid">
-           <div class="authority-item"><span class="check" aria-hidden="true">✓</span><strong>Development-focused framework</strong><small>Designed to support everyday growth through structured, age-appropriate activities.</small></div>
-           <div class="authority-item"><span class="check" aria-hidden="true">✓</span><strong>Built around your child</strong><small>Age, personality, interests, strengths, goals, and daily routine all matter.</small></div>
-            <div class="authority-item"><span class="check" aria-hidden="true">✓</span><strong>Practical parent guidance</strong><small>Clear steps, parent language, what to notice, and gentler options.</small></div>
-           <div class="authority-item"><span class="check" aria-hidden="true">✓</span><strong>Educational support</strong><small>For everyday family use—not a replacement for medical or therapeutic care.</small></div>
+           <div class="authority-item"><span class="check" aria-hidden="true">✓</span><div><strong>Development-focused framework</strong><small>Designed to support everyday growth through structured, age-appropriate activities.</small></div></div>
+           <div class="authority-item"><span class="check" aria-hidden="true">✓</span><div><strong>Built around your child</strong><small>Age, personality, interests, strengths, goals, and daily routine all matter.</small></div></div>
+            <div class="authority-item"><span class="check" aria-hidden="true">✓</span><div><strong>Practical parent guidance</strong><small>Clear steps, parent language, what to notice, and gentler options.</small></div></div>
+           <div class="authority-item"><span class="check" aria-hidden="true">✓</span><div><strong>Educational support</strong><small>For everyday family use—not a replacement for medical or therapeutic care.</small></div></div>
           </div>
         </div>
       </div>
@@ -1110,12 +1117,12 @@
        <div class="price-badge">Founding Price</div>
          <h3>Your Child's Personalized 30-Day Growth Plan</h3>
           <div class="price-amount">$9.99</div>
-         <p class="price-subline">One-time payment • Personalized PDF delivered within 24 hours • No subscription</p>
+         <p class="price-subline">One-time payment • PDF delivered within 24 hours after questionnaire completion • No subscription</p>
           <ul class="price-list">
           <li><span class="check" aria-hidden="true">✓</span>Personalized child snapshot and strengths profile</li>
            <li><span class="check" aria-hidden="true">✓</span>30-day roadmap with daily 5–10 minute activities</li>
            <li><span class="check" aria-hidden="true">✓</span>Materials, step-by-step instructions, and gentler alternatives</li>
-           <li><span class="check" aria-hidden="true">✓</span>Parent language prompts and “what to notice” guidance</li>
+           <li><span class="check" aria-hidden="true">✓</span>Parent language prompts and "what to notice" guidance</li>
        <li><span class="check" aria-hidden="true">✓</span>Weekly reflections and next-step guidance</li>
         <li><span class="check" aria-hidden="true">✓</span>Delivered by email within 24 hours after the questionnaire</li>
           </ul>
@@ -1221,18 +1228,18 @@
     menuBtn.addEventListener('click',()=>{
       const open=navLinks.classList.toggle('mobile-open');
       menuBtn.setAttribute('aria-expanded',String(open));
-      menuBtn.setAttribute('aria-label',open?'Close menu':'Open menu');
+      menuBtn.setAttribute('aria-label',open?'Close navigation menu':'Toggle navigation menu');
     });
     navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{
       navLinks.classList.remove('mobile-open');
       menuBtn.setAttribute('aria-expanded','false');
-      menuBtn.setAttribute('aria-label','Open menu');
+      menuBtn.setAttribute('aria-label','Toggle navigation menu');
     }));
    document.addEventListener('click',(e)=>{
   if(!navLinks.contains(e.target) && !menuBtn.contains(e.target)){
     navLinks.classList.remove('mobile-open');
     menuBtn.setAttribute('aria-expanded','false');
-    menuBtn.setAttribute('aria-label','Open menu');
+    menuBtn.setAttribute('aria-label','Toggle navigation menu');
   }
 });
 
@@ -1240,7 +1247,7 @@ document.addEventListener('keydown',(e)=>{
   if(e.key==='Escape'){
     navLinks.classList.remove('mobile-open');
     menuBtn.setAttribute('aria-expanded','false');
-    menuBtn.setAttribute('aria-label','Open menu');
+    menuBtn.setAttribute('aria-label','Toggle navigation menu');
     menuBtn.focus();
   }
 });
