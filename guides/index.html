@@ -143,15 +143,12 @@
     }
 
     .brand-mark{
-      width:34px;
-      height:34px;
-      display:grid;
-      place-items:center;
-      border-radius:50%;
-      color:#ffb347;
-      background:var(--teal);
-      font:700 18px/1 Georgia,serif;
-    }
+  width:52px;
+  height:42px;
+  display:block;
+  flex-shrink:0;
+  object-fit:contain;
+}
 
     .top-nav{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
 
@@ -455,7 +452,7 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="/" aria-label="RaiseBright home">
-        <span class="brand-mark" aria-hidden="true">&#8743;</span>
+        <img class="brand-mark" src="/favicon.svg?v=2" alt="" aria-hidden="true">
         <span>RaiseBright</span>
       </a>
       <nav class="top-nav" aria-label="Main navigation">
