@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://raisebright.org/</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
   </url>
   <url>
     <loc>https://raisebright.org/privacy.html</loc>
@@ -15,5 +15,33 @@
   <url>
     <loc>https://raisebright.org/terms.html</loc>
     <lastmod>2026-08-22</lastmod>
+  </url>
+  <url>
+    <loc>https://raisebright.org/guides/</loc>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://raisebright.org/guides/activities-to-help-children-focus.html</loc>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://raisebright.org/guides/confidence-building-activities-for-children.html</loc>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://raisebright.org/guides/emotional-awareness-activities-for-children.html</loc>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://raisebright.org/guides/learning-activities-based-on-child-interests.html</loc>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://raisebright.org/guides/screen-free-creativity-activities-for-children.html</loc>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://raisebright.org/guides/communication-activities-for-parents-and-children.html</loc>
+    <lastmod>2026-08-23</lastmod>
   </url>
 </urlset>
