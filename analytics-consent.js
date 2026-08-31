@@ -14,7 +14,6 @@
 
   const CONSENT_KEY = 'raisebright_analytics_consent';
   const GOOGLE_TAG_ID = 'G-YKYF68PV7K';
-  const MEASUREMENT_ID = 'G-GNJJ7HQCLT';
   const GA_SCRIPT_ID = 'raisebright-ga4-script';
   const CONSENT_STYLE_ID = 'raisebright-consent-styles';
 
@@ -79,7 +78,7 @@
 
     if (!window.__raisebrightGa4Configured) {
       window.__raisebrightGa4Configured = true;
-      window.gtag('config', MEASUREMENT_ID);
+      window.gtag('config', GOOGLE_TAG_ID);
     }
   }
 
