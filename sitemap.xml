@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://raisebright.org/</loc>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://raisebright.org/guides/</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-21</lastmod>
   </url>
   <url>
     <loc>https://raisebright.org/guides/activities-to-help-children-focus.html</loc>
@@ -95,5 +95,21 @@
   <url>
     <loc>https://raisebright.org/guides/after-school-routine-for-kids.html</loc>
     <lastmod>2026-09-20</lastmod>
+  </url>
+  <url>
+    <loc>https://raisebright.org/guides/how-much-sleep-do-children-need.html</loc>
+    <lastmod>2026-09-21</lastmod>
+  </url>
+  <url>
+    <loc>https://raisebright.org/guides/friendship-conflict-or-bullying.html</loc>
+    <lastmod>2026-09-21</lastmod>
+  </url>
+  <url>
+    <loc>https://raisebright.org/guides/how-to-help-a-child-with-everyday-worries.html</loc>
+    <lastmod>2026-09-21</lastmod>
+  </url>
+  <url>
+    <loc>https://raisebright.org/guides/how-to-help-a-child-who-avoids-reading.html</loc>
+    <lastmod>2026-09-21</lastmod>
   </url>
 </urlset>
